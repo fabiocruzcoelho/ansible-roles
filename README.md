@@ -23,5 +23,9 @@ yum install ansible
     
   - name: Install Nginx
     yum: name=nginx state=present
- ```
+```
+#### Executando o playbook como root
+```bash
+ansible-playbook webservers.yaml -u root
+```
 No exemplo acima criamos um playbook webserver.yaml para rodar em dois servidores que fara o papel de webserver o mesmo ira atualizar o S.O e instalar o Nginx.
