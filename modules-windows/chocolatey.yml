@@ -1,5 +1,5 @@
 ---
-- name: Instaling packages with chocolatey
+- name: Instaling simpla packages
   win_chocolatey:
     name: git
     state: latest
