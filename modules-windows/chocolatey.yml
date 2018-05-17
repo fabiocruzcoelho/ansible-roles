@@ -1,0 +1,13 @@
+---
+- name: Instaling packages with chocolatey
+  win_chocolatey:
+    name: git
+    state: latest
+  
+- name: Install multiple packages
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  with_items:
+  - pscx
+  - windirstat
